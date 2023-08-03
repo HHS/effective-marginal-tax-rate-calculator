@@ -1,0 +1,547 @@
+div.content.frs div.container {
+	margin-bottom: 1em;
+}
+td {
+	vertical-align: top;
+	padding: 6px 4px;
+}
+ul.steps {
+/*	margin: 10px 0 24px 0 !important; */
+	padding: 0 !important;
+	height: 60px;
+	background-color: #fff;
+	margin-bottom:60px;
+	margin-left:30%;
+}
+ul.steps li {
+	width: 40px;
+        display: block;
+        font-size: 12px;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+	float: left;
+	text-align: center;
+}
+ul.steps li.step {
+    width: 70px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a.roundbutton {
+	display: block;
+	background-color: transparent;
+	background-image: url(images/button-round-step.gif);
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right:15px;
+}
+a.roundbutton:hover    			{ background-position: center -40px; }
+a.roundbutton.inactive 			{ background-position: center -80px; }
+a.roundbutton.inactive:hover 	{ background-position: center -80px;	}
+a.roundbutton.active 			{ background-position: center -40px; }
+a.roundbutton.empty, a.roundbutton.back, a.roundbutton.next, a.roundbutton.frshelp, a.roundbutton.reset {
+	width: 42px;
+}
+a.roundbutton.empty { background-image: none; }
+a.roundbutton.back { background-image: url(images/button-round-back.gif); }
+a.roundbutton.next { background-image: url(images/button-round-next.gif); }
+a.roundbutton.frshelp { background-image: url(images/button-round-help.gif); }
+a.roundbutton.reset { background-image: url(images/button-round-reset.gif); }
+a.squarebutton, div.squarebutton {
+	display: block;
+	background-color: transparent;
+	background-image: url(images/button-square-step.gif);
+	background-repeat: no-repeat;
+	background-position: center -40px;
+	width: 70px;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+    font-size: 180%;
+	line-height: 16px;
+	text-decoration: none;
+	color: white;
+}
+a.squarebutton span.small, div.squarebutton span.small {
+	font-size: 60% !important;
+}
+a.squarebutton:link, a.squarebutton:active, a.squarebutton:visited, a.squarebutton:hover { color: white; }
+a.squarebutton:hover { background-position: center -80px; }
+a.squarebutton.active { background-position: center 0px; }
+a.squarebutton.mini, div.squarebutton.mini {
+	background-image: url(images/button-square-step-small.gif);
+	background-position: center 0px;
+	width: 20px;
+	height: 20px;
+	float: left;
+	text-decoration: none !important;
+	line-height: 20px;
+	margin: -3px 5px 0 0;
+	font-size: 100%;
+}
+a.squarebutton.mini:hover { background-position: center 0px; color: white; }
+h3 a.squarebutton.mini, h3 div.squarebutton.mini { color: white; }
+div.squarebutton.inactive { background-image: url(images/button-square-inactive-new.gif); background-position: center 0px; }
+div.squarebutton.inactive:hover { background-position: center 0px;	}
+label strong {
+/*	font-family: Trebuchet, "Trebuchet MS", Helvetica, sans-serif;  */
+	font-weight: 700;
+	font-size: 120%;
+    color: #750B0C;
+}
+.validation-advice {
+	color: #750B0C;
+	font-style: italic;
+	font-size: 88%;
+}
+img.context-help-icon {
+	margin-left: 6px;
+	vertical-align: middle;
+}
+#help-box {
+	display: none;
+	overflow: auto;
+	font-size: 88%;
+	padding: 4px;
+	margin-top: 100px;
+}
+#help-box p {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#help-box img {
+	float: left;
+	margin-right: 4px;
+}
+.frs-note {
+	font-size: 88%;
+}
+h2.steptitle {
+	float:left;
+	margin-top: 6px;
+	padding-left: 14px;
+	width: 70% !important;
+	font-size: 24px;
+	font-family:"Source Sans Pro";
+	font-weight:bold;
+}
+div.buttons {
+	float:right;
+	padding-right: 24px;
+}
+div.buttons a {
+	float: left;
+}
+body {
+    margin:auto;
+    border:0px solid;
+}
+#content {
+  margin-right:68px;
+  margin-left:68px;
+  padding-top:20px;
+}
+
+#content h1 {
+  text-align:center;
+  color:#707070;
+  padding: 20px;
+  border:1px solid #707070;
+  font-size:28px;
+  font-family: "Merriweather", serif, helvetica;
+  font-weight:bold;
+}
+h2 {
+  font-size:24px;
+  font-weight:bold;
+}
+#content p {
+  width:100%;
+  margin:auto;
+  margin-bottom:40px;
+  padding-bottom:25px;
+  border-bottom:1px solid #d2d2d2;
+  font-size:16px;
+  font-family:"Merriweather", serif, helvetica;
+}
+a.roundbutton.back::after {
+  content:"Back";
+  font-size:12px;
+  color:#007987;
+  font-weight:bold;
+}
+a.roundbutton.next::after {
+  content:"Save & Next";
+  font-size:12px;
+  color:#007987;
+  font-weight:bold;
+}
+a.roundbutton.reset::after {
+  content:"Start Over";
+  font-size:12px;
+  color:#007987;
+  font-weight:bold;
+}
+#residence {
+  margin-top:-40px !important;
+}
+#ccdf, #fsp, #hlth, #sec8, #tanf, #lifeline, #liheap, #eap, #wic, #ssi, #ui, #afterschool, #nsbp, #frpl, #fsmp, #prek_mtrc, #headstart, #earlyheadstart, #exclude_covid_policies_ending_0921, #exclude_covid_policies_ending_1221, #ssp, #ostp {
+  margin:10px 0px;
+}
+.stepfourhead {
+  margin-top:60px !important;
+}
+
+/*-------------------------- media queries below ----------------*/
+@media (min-width:320px) and (max-width:840px) {
+ /* ul.steps li.step  {
+    margin-bottom:30px !important;
+    width:50%;
+  }
+  div.buttons {
+    padding-bottom:20px;
+    position:relative;
+    top:-116px;
+    padding-right:0px;
+  }
+  a.squarebutton.active, div.squarebutton.inactive {
+    text-align:center;
+    margin:auto;
+  }
+  ul.steps {
+    margin-left:0%;
+  }
+*/
+  #content p {
+    width:100%;
+  }
+  #content h1 {
+    font-size:28px;
+  } 
+  h2.steptitle {
+    width:100% !important;
+    margin-top:60px;
+    position:relative;
+    top:50px;
+    left:-13px;
+  }
+  #main-id table {
+    width:100%;
+  }
+}
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+/* --------- For iphone 6, 7, and 8 ---------- */
+/*  ul.steps li.step  {
+    margin-bottom:30px !important;
+    width:50%;
+  }
+  div.buttons {
+    padding-bottom:20px;
+    position:relative;
+    top:-115px;
+    left:-20px !important;
+  }
+  a.squarebutton.active, div.squarebutton.inactive {
+    text-align:center;
+    margin:auto;
+  }
+  ul.steps {
+    margin-left:0%;
+  }
+*/
+  #content p {
+    width:100%;
+    font-size:38px;
+  }
+  #content h1 {
+    font-size:48px;
+    font-family:Merriweather;
+  }
+  h2.steptitle {
+    width:100%;
+    margin-top:60px;
+    position:relative;
+    top:50px;
+    left:-13px;
+    font-size:44px;
+  }
+  #main-id table {
+    width:100%;
+  }
+  #simulator, #residence {
+    font-size:30px;
+    margin-bottom:40px;
+  }
+  table td label {
+    font-size:35px;
+  }
+  table td select {
+    font-size:25px;
+  }
+  body {
+    margin-right:1px;
+    margin-left:1px ;
+    margin-top:40px;
+  }
+  ul.steps li {
+    font-size:32px;
+  }
+  a.squarebutton {
+    font-size:0%;
+  }
+  div.squarebutton {
+    font-size:0%;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+/* ----- For general iPad layouts -------- */
+/*    ul.steps li.step  {
+      margin-bottom:30px !important;
+      width:50%;
+  }
+    div.buttons {
+      padding-bottom:20px;
+      position:relative;
+      top:-115px;
+      left:-20px !important;
+  }
+    a.squarebutton.active, div.squarebutton.inactive {
+      text-align:center;
+      margin:auto;
+  }
+    ul.steps {
+      margin-left:0%;
+  }
+*/    
+    #content p {
+      width:100%;
+      font-size:16px;
+  }
+    #content h1 {
+      padding:21px;
+      font-family:"Merriweather", Serif, Arial;
+  }
+    h2.steptitle {
+      width:100%;
+      margin-top:60px;
+      position:relative;
+      top:10px;
+      left:-13px;
+  }
+    #main-id table {
+      width:100%;
+  }
+    #simulator, #residence {
+      font-size:20px;
+  }
+    table td label {
+      font-size:20px;
+  }
+    table td select {
+      font-size:20px;
+  }
+    ul.steps {
+      margin-left:20%;
+  }
+}
+
+/*
+/* 2778x1284 pixels at 458ppi - iPhone 12 Pro Max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        
+body {
+    width:100% !important;
+        }
+ul.steps li.step {
+    width:100% !important;
+    position:relative;
+    left:0%;
+  }
+.squarebutton.active, div.squarebutton.inactive,
+a.squarebutton:link, a.squarebutton:active, a.squarebutton:visited, a.squarebutton:hover {
+    position: relative;
+    top: 40px;
+  }
+a.roundbutton.empty, a.roundbutton.back, a.roundbutton.next, a.roundbutton.frshelp, a.roundbutton.reset { 
+    width: 55px;
+  }
+}
+/* iPhone SE (2020) */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+body {
+    width:100% !important;
+}
+ul.steps li.step {
+    width:100% !important;
+    position:relative;
+    left:0%;
+}
+.squarebutton.active, div.squarebutton.inactive,
+a.squarebutton:link, a.squarebutton:active, a.squarebutton:visited, a.squarebutton:hover {
+    position: relative;
+    top: 40px;
+}
+a.roundbutton.empty, a.roundbutton.back, a.roundbutton.next, a.roundbutton.frshelp, a.roundbutton.reset { 
+    width: 55px;
+  }
+}    
+
+*/
+/*@media (min-width:320px) and (max-width:378px) {
+  ul.steps li.step {
+    width:100%;
+  }
+  .buttons {
+    left:-5px !important;
+  }
+  .steptitle {
+    top:50px;
+    position:relative;
+  }
+  #main-id table {
+    position:relative;
+    top:50px;
+  }
+}
+*/
+@media (min-width:379px) and (max-width:840px) {
+  #main-id table {
+    position:relative;
+    top:50px;
+  }
+}
+@media (max-width:470px) {
+  .container u {
+    position:relative;
+    top:50px;
+  }
+  table .indented .copy {
+    text-align:left;
+  }
+}
+
+@media (min-width:471px) and (max-width:635px) {
+  h2.steptitle {
+    position:relative !important;
+    top:0px !important;
+  }
+  #residence {
+    position:relative;
+    left: 0px;
+    top: 38px;
+  }
+  #main-id table {
+    top:0px;
+    width:100%;
+    }
+}
+@media (min-width:562px) {
+  #residence {
+    position:relative;
+    top:31px !important;
+  }
+}
+@media (min-width:636px) and (max-width:840px) {
+  h2.steptitle {
+    position:relative;
+    left:0px;
+    top:0px;
+  }
+  #residence {
+    position:relative;
+  }
+  #main-id table {
+    top:0px;
+    width:100%;
+  }
+}
+@media (min-width:841px) {
+  ul.steps {
+    margin: auto;
+    margin-bottom:60px;
+   display:table;
+  }
+  .step li {
+    float:left;
+    margin-right:20px !important;
+  }
+  #main-id table {
+    position:relative;
+    top:50px !important;
+    width:100% !important;
+  }
+  #simulator, #residence {
+    position:relative;
+    top:32px !important;
+  }
+}
+@media screen and (min-width: 800px) {
+/* --- this css will only be used when the screen size is min 800px ----- */
+
+  body {
+    width:75%;
+  }
+  .step li {
+    float:left;
+    margin-right:20px !important;
+  }
+  #main-id table {
+    position:relative;
+    top:20px !important;
+    width:70% !important;
+    margin-bottom:30px;
+  }
+  #simulator, #residence {
+    position:relative;
+    top:32px !important;
+  }
+  .container {
+    margin:0 20px;
+  }
+  #amt_3 {
+    margin-bottom:20px;
+    }
+  /*ul.steps li.step {
+    width:10%;
+    position:relative;
+    left:10%;
+  } */
+}
+
+@media (min-width:862px) {
+  #residence {
+    position:relative;
+    left: 0px !important;
+  }
+}
+@media (max-width:450px) {
+  h3 {
+    position:relative;
+    top:50px;
+    margin-bottom:75px;
+  }
+}
+@media (min-width:450px) and (max-width:470px) {
+  h2.steptitle {
+    margin-bottom:60px !important;
+  }
+}
+@media (max-width:470px) {
+  #residence {
+   margin-top:0px !important;
+   }
+}
